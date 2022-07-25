@@ -224,11 +224,6 @@ a {
     padding-bottom: 120px;
     position: relative;
     z-index: 2;
-    flex-direction: column;
-    padding-top: 40px;
-}
-.landing .container .img {
-    order: -1;
 }
 .landing .container img {
     width: 600px;
@@ -237,6 +232,10 @@ a {
 @media (max-width:991px) {
     .circle {
        clip-path : circle(470px at left 800px);
+    }
+    .landing .container {
+            flex-direction: column;
+            padding-top: 40px;
     }
 }
 @keyframes imgAnimate {
@@ -271,6 +270,9 @@ a {
     }
     .landing .text p {
         margin: 10px auto;
+    }
+    .landing .container .img {
+    order: -1;
     }
 }
 .landing .go-down {
